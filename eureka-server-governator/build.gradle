@@ -1,5 +1,4 @@
 apply plugin: 'war'
-apply plugin: 'jetty'
 
 dependencies {
     compile project(':eureka-core')
@@ -28,6 +27,6 @@ war {
     from (project(':eureka-resources').file('build/resources/main'))
 }
 
-jettyRun.doFirst {
-    contextPath 'eureka'
-}
+//jettyRun.doFirst {
+//    contextPath 'eureka'
+//}
